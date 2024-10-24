@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Signin-singup</title>
+</head>
+
+<body>
+    <div class="container">
+            <div class="signin-singup">
+            <!--sign in-->
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Login</h2>
+                    <div class="input-preecher">
+                        <ion-icon name="person"></ion-icon>
+                        <input type="text" placeholder="Nome de Usario">
+                    </div>
+                    <div class="input-preecher">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <input type="submit" value="login" class="button">
+                    <p class="social-text">Conecte-se com uma rede-social</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                    <p class="texto-conta">Não tem uma conta? <a href="#" id="sign-up-btn2">Cadastrar-se</a></p>
+                </form>
+                <!--sign up-->
+                <form action="" class="sign-up-form">
+                    <h2 class="title">Cadastrar-se</h2>
+                    <div class="input-preecher">
+                        <ion-icon name="person"></ion-icon>
+                        <input type="text" placeholder="Nome de Usario">
+                    </div>
+                    <div class="input-preecher">
+                    <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" placeholder="E-mail">
+                    </div>
+                    <div class="input-preecher">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <input type="submit" value="Cadastrar-se" class="button">
+                    <p class="social-text">Conecte-se com uma rede-social</p>
+                    <div class="social-media">
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-google"></ion-icon>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a>
+                    </div>
+                    <p class="texto-conta">Já tem conta? <a href="#" id="sign-in-btn2">Login</a></p>
+                </form>
+            </div>
+        <div class="painel-container">
+            <div class="painel left-panel">
+                <div class="content">
+                    <h3>Já sou membro</h3>
+                    <p>Bem-vindo de volta! Parece que você já tem uma conta. Por favor, faça login para continuar.</p>
+                    <button class="button" id="sign-in-btn">Login</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+            <div class="painel right-panel">
+                <div class="content">
+                    <h3>Novo membro</h3>
+                    <p>Bem-vindo! Parece que você ainda não tem uma conta. Cadastre-se agora para começar!</p>
+                    <button class="button" id="sign-up-btn">Cadastrar-se</button>
+                </div>
+                <img src="" alt="" class="image">
+            </div>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #11111e;
+    font-family: 'Kanit', sans-serif;
+    color: wheat;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 80px; 
+    overflow-y: overlay;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: wheat;
+    border-radius: 100px;
+}
+
+/* Navbar */
+.header-nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    padding: 16px 50px;
+    background-color: #0d0d17;
+    box-shadow: 10px 10px 20px rgba(3, 3, 4, 1);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: wheat;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-right: 1px solid #fff0;
+    border-left: 1px solid #fff0;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    border-right: 1px solid wheat;
+    border-left: 1px solid wheat;
+    transform: scale(1.2);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    letter-spacing: 1px;
+}
+
+/* Estilos para a barra */
+nav div.bar {
+    display: none;
+    position: absolute;
+    right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav div.bar.active .open {
+    display: none;
+}
+
+nav div.bar.active .close {
+    display: inline;
+}
+
+nav div.bar .close {
+    display: none;
+}
+
+a:hover {
+    color: rgb(0, 84, 167);
+}
+
+/* Container de Equipes */
+.container-equipes {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Carrossel */
+.carousel {
+    transition: transform 0.5s ease; 
+    overflow: hidden; 
+}
+
+.team {
+    min-width: 100%;
+    background-color: #0d0d17;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    padding: 20px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgb(1, 1, 59);
+}
+
+.team p {
+    color: rgba(245, 222, 179, 0.548);
+}
+
+
+/* Botões de navegação */
+button {
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #e5c09c; 
+}
+
+/* footer */
+footer{
+    background-color: #0d0d17;
+    box-shadow: 10px 10px 20px rgba(3, 3, 4, 1);
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: rgb(142, 130, 109);
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+/* Efeito nos icones */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: rgb(130, 130, 130);
+    transition: 0.3s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.footerNav ul li a{
+    color:rgb(142, 130, 109);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+@media (min-width: 769px) {
+    .header-nav {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    nav ul {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    nav div.bar {
+        display: none; 
+    }
+
+    .footerNav ul {
+        flex-direction: row; 
+    }
+
+    .socialIcons a {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    button {
+        font-size: 28px;
+    }
+
+    .footerContainer {
+        padding: 90px 60px 40px;
+    }
+
+    .socialIcons a i {
+        font-size: 2.5em;
+    }
+
+    .footerNav ul li a {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        padding: 20px 20px;
+      }
+      .logo {
+        font-size: 20px;
+      }
+      nav ul {
+          opacity: 0;
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          background-color: #11111e;
+          top: 60px;
+          left: 0px;
+          right: 0px;
+          padding: 20px;
+          z-index: 1000;
+          border-radius: 5px;
+          pointer-events: none;
+          align-items: center;
+          transition: 0.3s;
+          box-shadow: 10px 20px 20px rgba(3, 3, 4, 1);
+      }
+
+      nav div.bar {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        margin-top: -15px;
+        left: 80%;
+        font-size: 20px;
+        cursor: pointer;
+        transition: 0.1s;
+      }
+
+      nav ul.activeMenu {
+        opacity: 1;
+        pointer-events: all;
+      }
+    
+    /* Footer */
+
+    .footerNav ul{
+        flex-direction: column;
+    } 
+
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+@media (max-width: 480px) {
+    nav div.bar{
+        display: block;
+        right: 50px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+
+    .header-nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #11111e;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        padding: 20px;
+        z-index: 1000;
+        border-radius: 5px;
+        pointer-events: none;
+        align-items: center;
+        transition: 0.3s;
+        box-shadow: 10px 20px 20px rgba(3, 3, 4, 1);
+    }
+
+    nav div.bar{
+        display: flex;
+        position: absolute;
+        right: 80px;
+        margin-top: -45px;
+        left: 80%;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    nav ul.activeMenu {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    nav div.bar.active .open{
+        display: none;
+    }
+    nav div.bar .close{
+        display: none;
+    }
+    nav div.bar.active .close{
+        display: initial;
+    }
+
+    nav ul li:hover {
+        border-left: 1px solid #fff;
+        border-right: 1px solid #fff;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: wheat;
+        letter-spacing: 1px;
+    }
+
+
+    .container-equipes {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .team {
+        height: 600px;
+        padding: 15px;
+    }
+
+    .team img {
+        max-width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 15px rgb(1, 1, 59);
+    }
+
+    button {
+        font-size: 18px;
+        padding: 6px 10px;
+    }
+
+    .footerNav ul li {
+        margin: 5px;
+      }
+    .socialIcons a {
+        padding: 6px;
+        margin: 2px;
+      }
+}

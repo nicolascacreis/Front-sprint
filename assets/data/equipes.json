@@ -1,0 +1,57 @@
+[
+    {
+        "name": "ABT CUPRA FORMULA E TEAM",
+        "logo": "../imgEquipes/abt-cupra.png",
+        "description": "A ABT CUPRA Formula E Team é uma equipe de automobilismo que compete na Fórmula E, a principal categoria de corridas de carros elétricos. A equipe é uma parceria entre a ABT Sportsline, com tradição em competições de alto nível, e a CUPRA, a marca esportiva da SEAT. Juntas, elas combinam expertise técnica e inovação para disputar o campeonato de carros elétricos com foco em desempenho e sustentabilidade."
+    },
+    {
+        "name": "ANDRETTI FORMULA E",
+        "logo": "../imgEquipes/andretti.png",
+        "description": "A Andretti Formula E é uma equipe de automobilismo fundada por Michael Andretti, competindo na Fórmula E. Parte da Andretti Autosport, a equipe tem tradição em várias categorias e é conhecida pela inovação e consistência nas corridas elétricas."
+    },
+    {
+        "name": "DS Penske",
+        "logo": "../imgEquipes/penske.png",
+        "description": "A DS Penske é uma equipe de Fórmula E formada pela parceria entre a DS Automobiles e Penske Autosport. Conhecida por seu desempenho forte, combina tecnologia francesa com expertise americana no automobilismo elétrico."
+    },
+    {
+        "name": "Envision Racing",
+        "logo": "../imgEquipes/envision.png",
+        "description": "A Envision Racing é uma equipe de Fórmula E, apoiada pela Envision Group, focada em sustentabilidade e inovação. Anteriormente em parceria com a Audi, a equipe é conhecida por sua competitividade e compromisso com a mobilidade elétrica."
+    },
+    {
+        "name": "ERT Formula E Team ",
+        "logo": "../imgEquipes/ert.png",
+        "description": "A ERT (Emirates Racing Team) é uma equipe que participa da Fórmula E, destacando-se por seu comprometimento com a sustentabilidade e inovação no automobilismo elétrico. Embora não seja uma equipe tradicional na Fórmula E, sua presença traz uma nova perspectiva ao campeonato."
+    },
+    {
+        "name": "Jaguar TCS Racing",
+        "logo": "../imgEquipes/jaguar.png",
+        "description": "A Jaguar TCS Racing é uma equipe de corrida que participa da Fórmula E, a categoria de monopostos elétricos mais prestigiada do mundo. Com uma rica herança no automobilismo e um forte compromisso com a sustentabilidade, a Jaguar TCS Racing se destaca como uma das principais forças no campeonato."
+    },
+    {
+        "name": "Mahindra Racing",
+        "logo": "../imgEquipes/mahindra.png",
+        "description": "A Mahindra Racing é uma das equipes pioneiras na Fórmula E, sendo a primeira equipe indiana a competir em um campeonato mundial de automobilismo elétrico. Fundada em 2014, a equipe faz parte do conglomerado Mahindra Group, que tem raízes profundas na indústria automotiva, especialmente em veículos elétricos e soluções de mobilidade sustentável."
+    },
+    {
+        "name": "Maserati MSG Racing",
+        "logo": "../imgEquipes/maserati.png",
+        "description": "A Maserati é uma marca lendária no mundo automobilístico, famosa por seus carros esportivos e de luxo. Em 2022, a Maserati fez sua estreia na Fórmula E, marcando a volta da marca às competições de monopostos depois de mais de 60 anos. Esse movimento foi parte da estratégia da montadora italiana para entrar no universo da eletrificação e posicionar-se como uma marca de luxo que abraça a sustentabilidade e a inovação."
+    },
+    {
+        "name": "NEOM McLaren Formula E Team",
+        "logo": "../imgEquipes/mclaren.png",
+        "description": "A McLaren Racing é uma das equipes mais icônicas no mundo do automobilismo, e sua entrada na Fórmula E, a partir da temporada 2022-2023, representou um marco importante tanto para a equipe quanto para a categoria. A McLaren é mundialmente reconhecida por seu legado na Fórmula 1, onde conquistou diversos campeonatos mundiais, e pela sua inovação tecnológica em carros de alto desempenho."
+    },
+    {
+        "name": "Nissan Formula E Team",
+        "logo": "../imgEquipes/nissan.png",
+        "description": "A Nissan é uma das montadoras mais reconhecidas globalmente, tanto pelo seu legado na indústria automobilística quanto pela inovação em veículos elétricos, como o Nissan Leaf. Sua entrada na Fórmula E marcou o compromisso da empresa em liderar o futuro da mobilidade sustentável e em destacar suas tecnologias elétricas em um ambiente competitivo de alto nível."
+    },
+    {
+        "name": "TAG Heuer Porsche Formula E Team",
+        "logo": "../imgEquipes/porsche.png",
+        "description": "A Porsche é uma das marcas mais icônicas do automobilismo, famosa por sua herança de performance e inovação. Desde sua estreia na Fórmula E, a Porsche tem se destacado como uma força competitiva, refletindo seu compromisso com a eletrificação e as tecnologias de ponta."
+    }
+]

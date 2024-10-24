@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Estilo Geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #11111e;
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    overflow-y: overlay;
+    justify-content: center;   
+    align-items: center;   
+    padding-top: 80px;      
+}/*
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    padding: 2px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: wheat;
+    border-radius: 100px;
+}
+
+/* Navbar */
+.header-nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px 50px;
+    background-color: #0d0d17;
+    box-shadow: 10px 10px 20px rgba(3, 3, 4, 1);
+    transition: padding 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: wheat;
+    transition: transform 0.6s;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav div.bar {
+    display: none;
+    position: absolute;
+    right: 80px;
+    margin-top: -10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+nav div.bar.active .open {
+    display: none;
+}
+
+nav div.bar .close {
+    display: none;
+}
+
+nav div.bar.active .close {
+    display: initial;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    transition: border 0.3s, transform 0.3s;
+}
+
+nav ul li:hover {
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: scale(1.2);
+}
+
+a:hover {
+    color: rgb(0, 84, 167);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    letter-spacing: 1px;
+}
+
+nav div.bar i {
+    font-size: 30px;
+    color: wheat;
+}
+/* Tabela de Classificação-GRID  */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    gap: 30px; 
+    width: 100%;
+    padding: 20px;
+}
+
+.table-container {
+    grid-column: 1 / -1;
+  }
+  
+
+/* Tabela de Classificação pilotos */
+
+.table-container-pilotos {
+    background-color: #1b1b32;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 0; 
+}
+
+.table-container-pilotos h1,
+.table-container-equipes h1,
+.table-container-corridas h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    color: wheat;
+    border-bottom: 2px solid wheat;
+}
+
+.table-container-pilotos table,
+.table-container-equipes table,
+.table-container-corridas table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container-pilotos th, td,
+.table-container-equipes th, td,
+.table-container-corridas th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+
+.table-container-pilotos th,
+.table-container-equipes th,
+.table-container-corridas th {
+    background-color: #141425;
+    text-align: center;
+}
+
+.table-container-pilotos tr,
+.table-container-equipes tr,
+.table-container-corridas tr{
+    color: wheat;
+}
+
+.table-container-pilotos tr:hover,
+.table-container-equipes tr:hover,
+.table-container-corridas tr:hover {
+    background-color: #141425;
+}
+
+/* Barra de rolagem customizada */
+.table-container-pilotos,
+.table-container-equipes,
+.table-container-corridas {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.table-container-pilotos::-webkit-scrollbar,
+.table-container-equipes::-webkit-scrollbar,
+.table-container-corridas::-webkit-scrollbar {
+    width: 12px;
+}
+
+.table-container-pilotos::-webkit-scrollbar-track,
+.table-container-equipes::-webkit-scrollbar-track,
+.table-container-equipes::-webkit-scrollbar-track {
+    background: #141425;
+    border-radius: 10px;
+}
+
+.table-container-pilotos::-webkit-scrollbar-thumb,
+.table-container-equipes::-webkit-scrollbar-thumb,
+.table-container-corridas::-webkit-scrollbar-thumb {
+    background-color: wheat;
+    border-radius: 10px;
+    border: 3px solid #141425;
+}
+
+.table-container-pilotos::-webkit-scrollbar-thumb:hover,
+.table-container-equipes::-webkit-scrollbar-thumb:hover,
+.table-container-corridas::-webkit-scrollbar-thumb:hover {
+    background-color: wheat;
+}
+
+/* Tabela de Classificação Equipes */
+
+.table-container-equipes {
+    background-color: #1b1b32;
+    border-radius: 10px;
+    height: 525px;
+    overflow-x: auto;
+    margin: 0; 
+}
+
+
+/* Tabela de Corridas-locais */
+
+.table-container-corridas {
+    background-color: #1b1b32;
+    border-radius: 10px;
+    height: 525px;
+    overflow-x: auto; 
+}
+
+/* bandeiras */
+
+.bandeira {
+    text-align: left;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 1.33333333em;
+    line-height: 1em;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #333;
+    color: wheat; 
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    clear: both; 
+    background-color: #0d0d17;
+    box-shadow: 10px 10px 20px rgba(3, 3, 4, 1);
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    background-color: rgb(142, 130, 109);
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Efeito nos icones */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: rgb(130, 130, 130);
+    transition: 0.3s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+.footerNav ul li a{
+    color:rgb(142, 130, 109);
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+/* Ajustes para telas com largura acima de 768px */
+@media (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px; 
+    }
+
+    .table-container-corridas {
+        width: 100%; 
+        grid-column: 1; 
+        grid-row: 1; 
+    }
+
+    .table-container-equipes {
+        width: 100%; 
+        grid-column: 2; 
+        grid-row: 1; 
+    }
+
+    .table-container-pilotos {
+        width: 100%; 
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    .header-nav {
+        padding: 15px 40px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    nav ul {
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    nav div.bar {
+        display: none; 
+    }
+
+    .footerNav ul {
+        flex-direction: row; 
+    }
+
+    .socialIcons a {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+  /* Ajustes para dispositivos com largura máxima de 768px */
+@media (max-width: 768px) {
+    .header-nav {
+      padding: 20px 20px;
+    }
+    .logo {
+      font-size: 20px;
+    }
+    nav ul {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #11111e;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        padding: 20px;
+        z-index: 1000;
+        border-radius: 5px;
+        pointer-events: none;
+        align-items: center;
+        transition: 0.3s;
+        box-shadow: 10px 20px 20px rgba(3, 3, 4, 1);
+    }
+    nav div.bar {
+      display: flex;
+      position: absolute;
+      right: 20px;
+      margin-top: -15px;
+      left: 80%;
+      font-size: 20px;
+      cursor: pointer;
+      transition: 0.1s;
+    }
+    nav ul.activeMenu {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .footerNav ul {
+      flex-direction: column;
+    }
+    .footerNav ul li {
+      width: 100%;
+      text-align: center;
+      margin: 10px;
+    }
+    .socialIcons a {
+      padding: 8px;
+      margin: 4px;
+    }
+    .table-container-pilotos, 
+    .table-container-equipes, 
+    .table-container-corridas {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      grid-column: 1; 
+      grid-row: auto;
+    }
+    .grid-container {
+      grid-template-columns: 1fr; 
+    }
+}
+
+/* Ajustes para dispositivos com largura máxima de 480px */
+@media (max-width: 480px) {
+    .header-nav {
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .logo {
+      font-size: 18px;
+    }
+    nav ul {
+        opacity: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        background-color: #11111e;
+        top: 60px;
+        left: 0px;
+        right: 0px;
+        padding: 20px;
+        z-index: 1000;
+        border-radius: 5px;
+        pointer-events: none;
+        align-items: center;
+        transition: 0.3s;
+        box-shadow: 10px 20px 20px rgba(3, 3, 4, 1);
+    }
+    nav div.bar {
+        display: flex;
+        position: absolute;
+        right: 80px;
+        margin-top: -25px;
+        left: 80%;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+    .footerNav ul li {
+      margin: 5px;
+    }
+    .socialIcons a {
+      padding: 6px;
+      margin: 2px;
+    }
+    .table-container-pilotos, 
+    .table-container-equipes, 
+    .table-container-corridas {
+      display: block;
+      width: 100%;
+      margin-bottom: 20px;
+      grid-column: 1;
+      grid-row: auto;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+}
